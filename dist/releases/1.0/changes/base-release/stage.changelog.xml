@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+<include file="sentinel/tables/support_tickets.sql" relativeToChangelogFile="true"/>
+<include file="sentinel/triggers/support_tickets_bi_trg.sql" relativeToChangelogFile="true"/>
+<include file="sentinel/indexes/idx_support_tickets_assigned_to.sql" relativeToChangelogFile="true"/>
+<include file="sentinel/indexes/idx_support_tickets_created_at.sql" relativeToChangelogFile="true"/>
+<include file="sentinel/indexes/idx_support_tickets_status.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>
